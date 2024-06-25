@@ -1,0 +1,82 @@
+package com.example.tests;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+
+public class ShoppingCartTest {
+    private WebDriver driver;
+
+    @BeforeEach
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
+		ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(options);
+        driver.get("https://www.homemate.com.mt/product-category/outdoor");
+    }
+
+    @AfterEach
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+
+    @Test
+    public void testAddItemToCart() {
+        driver.findElement(By.xpath("//a[@title='Lava Stone Rock 3 Kg']")).click();
+        driver.findElement(By.name("Submit")).click();
+        WebElement cart = driver.findElement(By.className("ajax_cart_quantity"));
+        assertEquals("1", cart.getText());
+    }
+
+    @Test
+    public void testAddSameItemTwice() {
+        driver.findElement(By.xpath("//a[@title='Lava Stone Rock 3 Kg']")).click();
+        driver.findElement(By.name("Submit")).click();
+        driver.findElement(By.name("Submit")).click();
+        WebElement cart = driver.findElement(By.className("ajax_cart_quantity"));
+        assertEquals("2", cart.getText());
+    }
+
+    @Test
+    public void testAddTwoDifferentItems() {
+        driver.findElement(By.xpath("//a[@title='Lava Stone Rock 3 Kg']")).click();
+        driver.findElement(By.name("Submit")).click();
+        driver.findElement(By.xpath("//a[@title='Citronella Anti Mosquito Gel 125G']")).click();
+        driver.findElement(By.name("Submit")).click();
+        WebElement cart = driver.findElement(By.className("ajax_cart_quantity"));
+        assertEquals("2", cart.getText());
+    }
+
+    @Test
+    public void testRemoveItemFromCart() {
+        driver.findElement(By.xpath("//a[@title='Lava Stone Rock 3 Kg']")).click();
+        driver.findElement(By.name("Submit")).click();
+        driver.findElement(By.xpath("//a[@title='View my shopping cart']")).click();
+        driver.findElement(By.className("cart_quantity_delete")).click();
+        WebElement cart = driver.findElement(By.className("ajax_cart_no_product"));
+        assertTrue(cart.isDisplayed());
+    }
+
+    @Test
+    public void testEmptyCart() {
+        driver.findElement(By.xpath("//a[@title='Lava Stone Rock 3 Kg']")).click();
+        driver.findElement(By.name("Submit")).click();
+        driver.findElement(By.xpath("//a[@title='View my shopping cart']")).click();
+        driver.findElement(By.linkText("Delete")).click();
+        WebElement cart = driver.findElement(By.className("ajax_cart_no_product"));
+        assertTrue(cart.isDisplayed());
+    }
+}
+

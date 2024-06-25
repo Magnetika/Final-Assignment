@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SearchTest" project="website-testing" tests="5" started="5" failures="0" errors="5" ignored="0">
+  <testsuite name="com.example.tests.SearchTest" time="3.809" displayname="SearchTest" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.SearchTest]">
+    <testcase name="testUnlikelySearchTerm" classname="com.example.tests.SearchTest" time="1.362" displayname="testUnlikelySearchTerm()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.SearchTest]/[method:testUnlikelySearchTerm()]">
+      <error>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55127/devtools/browser/7a48764f-2af4-4c05-8a42-eecaad47814e
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)&#13;
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)&#13;
+	at java.base/java.util.Optional.map(Optional.java:260)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)&#13;
+	at com.example.tests.SearchTest.setUp(SearchTest.java:22)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testMultipleSearchTerms" classname="com.example.tests.SearchTest" time="0.603" displayname="testMultipleSearchTerms()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.SearchTest]/[method:testMultipleSearchTerms()]">
+      <error>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55143/devtools/browser/ce03c9fc-2cb8-4dba-beb0-2a5f52d6f44b
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)&#13;
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)&#13;
+	at java.base/java.util.Optional.map(Optional.java:260)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)&#13;
+	at com.example.tests.SearchTest.setUp(SearchTest.java:22)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCommonSearchTerm" classname="com.example.tests.SearchTest" time="0.602" displayname="testCommonSearchTerm()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.SearchTest]/[method:testCommonSearchTerm()]">
+      <error>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55154/devtools/browser/d3fe3c0a-83f2-4d4c-920e-861301b82d4e
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)&#13;
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)&#13;
+	at java.base/java.util.Optional.map(Optional.java:260)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)&#13;
+	at com.example.tests.SearchTest.setUp(SearchTest.java:22)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testLessCommonSearchTerm" classname="com.example.tests.SearchTest" time="0.619" displayname="testLessCommonSearchTerm()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.SearchTest]/[method:testLessCommonSearchTerm()]">
+      <error>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55164/devtools/browser/739f6a15-0d0c-417b-a5f4-20cd2524efab
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)&#13;
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)&#13;
+	at java.base/java.util.Optional.map(Optional.java:260)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)&#13;
+	at com.example.tests.SearchTest.setUp(SearchTest.java:22)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testNoSearchTerm" classname="com.example.tests.SearchTest" time="0.623" displayname="testNoSearchTerm()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.SearchTest]/[method:testNoSearchTerm()]">
+      <error>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55176/devtools/browser/1edbd43a-b9db-44a2-a0a2-0b4f509e5d76
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: ChromeDriver&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)&#13;
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)&#13;
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)&#13;
+	at java.base/java.util.Optional.map(Optional.java:260)&#13;
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)&#13;
+	at com.example.tests.SearchTest.setUp(SearchTest.java:22)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginTest" project="website-testing" tests="5" started="5" failures="0" errors="1" ignored="0">
+  <testsuite name="com.example.tests.LoginTest" time="19.223" displayname="LoginTest" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.LoginTest]">
+    <testcase name="testIncorrectCredentials" classname="com.example.tests.LoginTest" time="4.404" displayname="testIncorrectCredentials()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.LoginTest]/[method:testIncorrectCredentials()]"/>
+    <testcase name="testMissingUsername" classname="com.example.tests.LoginTest" time="3.642" displayname="testMissingUsername()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.LoginTest]/[method:testMissingUsername()]"/>
+    <testcase name="testCorrectCredentials" classname="com.example.tests.LoginTest" time="3.758" displayname="testCorrectCredentials()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.LoginTest]/[method:testCorrectCredentials()]"/>
+    <testcase name="testLogout" classname="com.example.tests.LoginTest" time="3.976" displayname="testLogout()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.LoginTest]/[method:testLogout()]">
+      <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".\/homemate\-login"}
+  (Session info: chrome=126.0.6478.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f304006e780747353054f06025cfdc7, findElement {using=class name, value=/homemate-login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.115, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\agnes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59579}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59579/devtoo..., se:cdpVersion: 126.0.6478.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f304006e780747353054f06025cfdc7&#13;
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#13;
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)&#13;
+	at com.example.tests.LoginTest.testLogout(LoginTest.java:72)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testMissingPassword" classname="com.example.tests.LoginTest" time="3.442" displayname="testMissingPassword()" uniqueid="[engine:junit-jupiter]/[class:com.example.tests.LoginTest]/[method:testMissingPassword()]"/>
+  </testsuite>
+</testrun>
